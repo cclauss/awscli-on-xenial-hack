@@ -1,8 +1,11 @@
 matrix:
   include:
      - dist: trusty
+       name: "dist: trusty"
      - dist: xenial
+       name: "dist: xenial"
      - dist: bionic
+       name: "dist: bionic"
 
 before_install:
   - python3 --version  # 3.5.2
