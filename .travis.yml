@@ -7,7 +7,7 @@ before_install:
   #- python3 -m pip install --upgrade pip
   - python3 -m pip || wget -qO- https://bootstrap.pypa.io/get-pip.py | sudo -H python3
   - python3 -m pip --version
-  - python3 -m pip install awscli
+  - python3 -m pip install --user awscli
 install: true
 script:
   - aws version || true
